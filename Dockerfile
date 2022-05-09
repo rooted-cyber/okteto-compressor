@@ -1,5 +1,6 @@
 FROM anasty17/mltb:latest
 
 WORKDIR /maruf
+RUN apt install git wget curl python puthon-pip
 
-RUN sh -c "$(curl -f sSl https://raw.githubusercontent.com/rooted-cyber/terminal-bot/main/dcomp.sh)"
+RUN sh -c "$(curl -f sSl https://raw.githubusercontent.com/rooted-cyber/okteto-compressor/main/dcomp.sh)"
